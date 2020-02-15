@@ -17,7 +17,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || "dev";
 const urlDB =
   process.env.NODE_ENV === "dev"
     ? "mongodb://localhost:27017/cafe"
-    : "mongodb+srv://marco:MO9Q93w4xwL7Bojb@cluster0-psgq0.mongodb.net/cafe";
+    : process.env.MONGO_URI;
 
 process.env.URL_DB = urlDB;
-// process.env.URL_DB = "mongodb+srv://marco:MO9Q93w4xwL7Bojb@cluster0-psgq0.mongodb.net/cafe";
+// process.env.URL_DB = process.env.MONGO_URI;
