@@ -42,3 +42,9 @@ const urlDB =
 
 process.env.URL_DB = urlDB;
 // process.env.URL_DB = process.env.MONGO_URI;
+
+/////////////////
+//GOOGLE CLIENT//
+/////////////////
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || "917829851284-q7d9idh1c4sn7h5bf3q44bqjiecod03k.apps.googleusercontent.com";
